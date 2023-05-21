@@ -1,0 +1,21 @@
+.left{
+   display: none;       /*不显示*/
+}
+header{
+   background: darkgray;
+}
+h1{
+   color: white;
+   text-align: center;           /*文本居中*/
+   text-transform: uppercase;    /*将文本字体大写*/
+}
+nav a{
+   color: black;
+}
+main{
+   background: gray;
+}
+h2{
+   text-transform: uppercase;     /*'text-transform'意为，文本样式转化*/
+   color: darkblue;
+}

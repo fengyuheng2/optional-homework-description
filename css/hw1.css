@@ -1,0 +1,96 @@
+header{
+    background-image: url("../images/flywheel.jpg");
+    height: 15%;
+    padding: 30px;
+    background-color: #ABCDFE;
+    background-size: 100%;    /*选用整张图片*/
+    background-repeat: no-repeat;
+}
+body{
+    padding: 0 10px;    /*使<body>的上下内边距和外边距，皆为零*/
+    margin: 0 10px;
+    font-family: "Times New Roman";  /*改变字体类型为新罗马*/
+    font-size: x-large;   /*字体放大*/
+}
+h1{
+    text-align: center;
+    color: #FFFFFF;
+    font-size: xx-large;  /*字体大小*/
+    text-transform: uppercase;   /*文本大小*/
+    margin: 0 0 2%;
+}
+h2{
+    color: #000000;
+}
+
+.left {     /*设置图片背景颜色*/
+    background-color: #808000;
+    width: 24%;
+    height: 110vh;
+    float:left;
+    padding: 5% 0;      /*值得留意*/
+}
+.right {     /*将文章内容内联*/
+    width:74%;
+    display: inline-block;
+    padding-left: 2%;
+}
+.left img {         /*将图片缩小并放入方框内*/
+    border: solid 2px #000000;
+    width: 80%;
+    margin: 10%;
+}
+nav a{
+    color: #000000;
+    display: inline-block;
+    margin: auto 1.2%;
+    width :22%;
+    height: 5%;
+    border-radius: 5px;
+    text-decoration: none;
+    padding: 2% 0;
+    text-align: center;
+    background-color: rgba(255,255,255,0.25); /*将‘home、teams、history等’的背景设为淡白色*/
+}
+.active{  /*将当前页面的图标中，文字变蓝、背景变白*/
+    background-color: #FFFFFF;
+    color: #2d31b3;
+}
+table{
+	border-spacing: 2px;        /*设置边框间隔*/
+	border: 3px solid white;
+	-webkit-border-radius: 25px 25px 0 0;
+	border-radius: 0 0 25px 25px;      /*不改变边框上边的棱角，改变下边的棱角为圆角*/
+    opacity: 0.8;
+    margin-left: 12%;
+    margin-top: 12%;
+}
+tr:nth-child(even),tr:nth-child(odd) {     /*将列表(even)偶数行和将列表(odd)奇数行，设为浅绿色*/
+	background: darkseagreen;
+}
+tr:first-child{
+    background: #51A39D;
+}
+table td,th{
+    padding: 9px;
+    text-align: center;
+    color: dimgray;
+}
+td:first-child,th:first-child{
+    text-align: left;
+}
+table th{       /*将列表标题设为白色*/
+    color: white;
+    border: outset 3px greenyellow;  /*定义边框类型及颜色*/
+}
+th:first-child {         /*使第一行左上角的，边框和图片棱角变圆角*/
+	-webkit-border-radius: 9px 0 0 0; /*选定第一行中的第一列*/  /*'tr>td'意为，选中tr中的所有td*/
+	border-radius: 9px 0 0 0;	       /*'tr:first-child'表示第一行，'td:fist-child'表示第一列*/  /*见课本css选择器*/
+}
+th:last-child {         /*使第一行左上角的，边框和图片棱角变圆角*/
+	-webkit-border-radius: 0 9px 0 0; /*选定第一行中的第一列*/  /*'tr>td'意为，选中tr中的所有td*/
+	border-radius: 0 9px 0 0;	       /*'tr:first-child'表示第一行，'td:fist-child'表示第一列*/  /*见课本css选择器*/
+}
+table td:hover {
+    color: black;
+}
